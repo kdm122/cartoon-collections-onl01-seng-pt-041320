@@ -67,7 +67,7 @@ def find_the_cheese(ingredients)# code an argument here
   ingredients.each do |thing|
     
     count += 1
-    puts "#{count} of #{cheese_types.length}"
+ #   puts "#{count} of #{cheese_types.length}"
     if cheese_types.include?("#{thing}") == true 
      # puts "#{thing} is present"
      return thing
