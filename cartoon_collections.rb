@@ -63,15 +63,18 @@ def find_the_cheese(ingredients)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
 #  ingredient.any? { |x| cheese_types.include?(x) }
 # puts "#{x}"
-  
+  count = 0
   ingredients.each do |thing|
+    
+    count += 1
+    puts "#{count} of #{cheese_types.length}"
     if cheese_types.include?("#{thing}") == true 
      # puts "#{thing} is present"
      return thing
-    elsif cheese_types.include?("#{thing}") == false
-    return nil 
-  end
-    
+     #puts thing
+     elsif cheese_types.include?("#{thing}") == false && count == cheese_types.length 
+    reutrn nil
+end
   end
   
   
